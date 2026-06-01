@@ -47,6 +47,27 @@ const news = (req, res) => {
     });
 };
 
+const addTrip = (req, res) => {
+    res.render('add-trip', {
+        title: 'Add Trip',
+        layout: 'layouts/layout'
+    });
+};
+
+const editTrip = (req, res) => {
+    res.render('edit-trip', {
+        title: 'Edit Trip',
+        layout: 'layouts/layout'
+    });
+};
+
+const updateTrip = (req, res) => {
+    res.render('update-trip', {
+        title: 'Update Trip',
+        layout: 'layouts/layout'
+    });
+};
+
 module.exports = {
     homelist,
     about,
@@ -54,5 +75,8 @@ module.exports = {
     travel,
     rooms,
     meals,
-    news
+    news,
+    addTrip,
+    editTrip,
+    updateTrip
 };

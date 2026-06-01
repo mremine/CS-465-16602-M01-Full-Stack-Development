@@ -11,4 +11,9 @@ router.get('/rooms', ctrlMain.rooms);
 router.get('/meals', ctrlMain.meals);
 router.get('/news', ctrlMain.news);
 
+// SPA Admin Pages
+router.get('/admin/add-trip', ctrlMain.addTrip);
+router.get('/admin/edit-trip', ctrlMain.editTrip);
+router.get('/admin/update-trip', ctrlMain.updateTrip);
+
 module.exports = router;
