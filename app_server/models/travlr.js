@@ -35,4 +35,4 @@ const tripSchema = new mongoose.Schema({
     }
 });
 
-mongoose.model('Trip', tripSchema);
+mongoose.model('trips', tripSchema);
