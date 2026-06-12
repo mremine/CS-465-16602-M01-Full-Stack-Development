@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
+const cors = require('cors');
 
 // MongoDB Connection
 require('./app_server/models/db');
@@ -13,6 +14,8 @@ const routes = require('./app_server/routes/index');
 const apiRoutes = require('./app_api/routes/index');
 
 const app = express();
+app.use(cors());
+app.use(express.json());
 
 // Views
 app.set('views', path.join(__dirname, 'app_server', 'views'));

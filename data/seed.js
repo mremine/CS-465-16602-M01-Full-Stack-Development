@@ -52,6 +52,7 @@ Trip.insertMany([
     console.log("Trip data loaded successfully");
     mongoose.connection.close();
 })
-.catch(err => {
+.catch((err) => {
     console.log(err);
+    mongoose.connection.close();
 });
