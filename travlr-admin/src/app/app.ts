@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { TripListComponent } from './components/trip-list/trip-list';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [TripListComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+  title = 'travlr-admin';
 }
